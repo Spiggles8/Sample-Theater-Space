@@ -1,0 +1,6 @@
+{
+  "short_name": "TS App",
+  "name": "Theater Space App",
+  "start_url": ".",
+  "display": "standalone"
+}
