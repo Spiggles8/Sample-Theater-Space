@@ -1,7 +1,9 @@
 import { useState } from "react";
 import "./App.css";
+import ControlsSubPage from "./components/ControlsSubPage";
 import StartSubPage from "./components/StartSubPage";
 import SystemStartingUpSubPage from "./components/SystemStartingUpSubPage";
+import SystemShuttingDownSubPage from "./components/SystemShuttingDownSubPage";
 
 function App() {
   const [startSubPage, setStartSubPage] = useState(true);
@@ -9,17 +11,37 @@ function App() {
   const [systemShuttingDownSubPage, setSystemShuttingDownSubPage] =
     useState(false);
   const [controlsSubPage, setControlsSubPage] = useState(false);
-  const [pressingShutdownSubPage, setPressingShutdownSubPage] = useState(false);
 
   return (
-    <div id="TouchScreenBoundary">
+    <div>
       {startSubPage && (
         <StartSubPage
+          className="SubPage"
           setSystemStartingUpSubPage={setSystemStartingUpSubPage}
           setStartSubPage={setStartSubPage}
         />
       )}
-      {systemStartingUpSubPage && <SystemStartingUpSubPage />}
+      {systemStartingUpSubPage && (
+        <SystemStartingUpSubPage
+          className="SubPage"
+          setControlsSubPage={setControlsSubPage}
+          setSystemStartingUpSubPage={setSystemStartingUpSubPage}
+        />
+      )}
+      {controlsSubPage && (
+        <ControlsSubPage
+          className="SubPage"
+          setSystemShuttingDownSubPage={setSystemShuttingDownSubPage}
+          setControlsSubPage={setControlsSubPage}
+        />
+      )}
+      {systemShuttingDownSubPage && (
+        <SystemShuttingDownSubPage
+          className="SubPage"
+          setStartSubPage={setStartSubPage}
+          setSystemShuttingDownSubPage={setSystemShuttingDownSubPage}
+        />
+      )}
     </div>
   );
 }

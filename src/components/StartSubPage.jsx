@@ -1,4 +1,3 @@
-import SystemStartingUpSubPage from "./SystemStartingUpSubPage";
 
 export default function StartSubPage({setSystemStartingUpSubPage, setStartSubPage}) {
 
@@ -13,8 +12,8 @@ export default function StartSubPage({setSystemStartingUpSubPage, setStartSubPag
       <div className="CornerTitle">
         <h3>Sample Theater Name</h3>
         <p>Touch Panel Location</p>
-      </div>
-      <button onClick={showSystemStartingUpSubPage}>Tap to Start System</button>
+        </div>
+      <button className="startButton" onClick={showSystemStartingUpSubPage}>Tap to Start System</button>
     </div>
   );
 }
