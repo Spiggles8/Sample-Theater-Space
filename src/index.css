@@ -2,58 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.SubPage {
-  @apply bg-[url('../public/Main_Background_01.jpg')] bg-contain bg-no-repeat text-white absolute h-[1200px] w-[1920px] p-0 m-0 top-0 left-0;
-}
-
-.CornerTitle {
-  @apply absolute text-2xl top-0 right-10 text-right;
-}
-
-.startButton {
-  @apply absolute top-0 right-0 text-center h-[1200px] w-[1920px] text-9xl;
-}
-
-.SystemStartingSubPage {
-  @apply bg-[url('../public/System_Changing_Background_01.jpg')] bg-contain bg-no-repeat;
-}
-
-.SystemChangingText {
-  @apply text-6xl absolute top-[320] left-[650];
-}
-
-.ProgramAudio {
-  @apply absolute border-2 rounded h-[675px] w-[275px] top-[35px] left-[55px] text-center text-2xl;
-}
-
-.PodiumMicAudio {
-  @apply absolute border-2 rounded h-[675px] w-[275px] top-[35px] left-[355px] text-center text-2xl;
-}
-
-.WirelessMicAudio {
-  @apply absolute border-2 rounded h-[675px] w-[275px] top-[35px] left-[655px] text-center text-2xl;
-}
-
-.VolumeUpButton {
-  @apply bg-green-600 font-bold py-2 px-4 rounded text-lg;
-}
-
-.VolumeUpButton:hover {
-  @apply bg-green-800;
-}
-
-.VolumeDownButton {
-  @apply bg-yellow-400 font-bold py-2 px-4 rounded text-lg;
-}
-
-.VolumeDownButton:hover {
-  @apply bg-yellow-500;
-}
-
-.MuteButton {
-  @apply bg-red-600 font-bold py-2 px-4 rounded text-lg;
-}
-
-.MuteButton:hover {
-  @apply bg-red-800;
+body,
+html {
+  @apply h-[1200px] w-[1920px] overflow-hidden;
 }
