@@ -1,6 +1,6 @@
 #Sample-Theater-Space
 
-TECHNOLOGIES USED: ReactJS, TailwindCSS, and C#.
+TECHNOLOGIES USED: ReactJS, TailwindCSS, and C# combined with Crestron Simpl Sharp Pro #.
 
 This application simulates a control panel in a theater space for Audio and Video Control with a Crestron Virtual Control Processor. 
 This is just a simulation so currently the backend feedback is only simulated.
